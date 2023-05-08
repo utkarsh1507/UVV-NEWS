@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/text_source"
+                android:textColor="@color/purple_700"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:src="@drawable/baseline_image_24"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:id="@+id/img_headline"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

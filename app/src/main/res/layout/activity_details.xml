@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="8dp">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="6dp"
+                    >
+                    
+                    <TextView
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:id="@+id/txt_detail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        
+                    </TextView>
+                    
+                    <ImageView
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/baseline_image_24"
+                        android:scaleType="fitXY"
+                        android:id="@+id/img_detail_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+
+                    </ImageView>
+                    
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/purple_700"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txt_details_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/txt_details_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+                
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:id="@+id/txt_detail_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/txt_detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
